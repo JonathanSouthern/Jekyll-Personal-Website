@@ -1,0 +1,39 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+
+ <g stroke="null">
+  <title stroke="null">background</title>
+  <rect stroke="null" fill="none" id="canvas_background" height="602" width="602" y="-1" x="-1"/>
+ </g>
+ <g stroke="null">
+  <title stroke="null">Layer 1</title>
+  <path stroke="null" id="svg_1" fill="#788787" d="m254.4,440.8c0,2.4 -2.4,4.8 -4.8,4.8l0,0c-2.4,0 -4.8,-2.4 -4.8,-4.8l0,-416.8c0,-2.4 2.4,-4.8 4.8,-4.8l0,0c2.4,0 4.8,2.4 4.8,4.8l0,416.8z"/>
+  <path stroke="null" id="svg_2" fill="#9E6226" d="m9.6,418.400004c12.696666,75.986828 138.686663,134.643326 292.999992,134.643326s280.303326,-59.989601 292.999992,-134.643326l-585.999985,0z"/>
+  <g stroke="null" id="svg_3">
+   <path stroke="null" id="svg_4" fill="#AF7643" d="m20.890323,449.30612c5.787097,10.246742 14.467742,20.493483 24.112904,29.459382l510.22905,0c10.609678,-8.965899 18.325807,-19.21264 24.112904,-29.459382l-558.454858,0z"/>
+   <path stroke="null" id="svg_5" fill="#AF7643" d="m442.383886,535.12258c28.935485,-7.685056 54.012905,-17.931798 76.196777,-29.459382l-435.961306,0c21.219356,11.527584 47.261292,21.774326 76.196777,29.459382l283.567752,0z"/>
+   <path stroke="null" id="svg_6" fill="#AF7643" d="m599.600021,417.285052c0,3.842528 -2.893548,7.685056 -5.787097,7.685056l-586.425827,0c-3.858065,0 -5.787097,-3.842528 -5.787097,-7.685056l0,0c0,-5.123371 2.893548,-7.685056 5.787097,-7.685056l585.461311,0c3.858065,0 6.751613,2.561685 6.751613,7.685056l0,0z"/>
+  </g>
+  <circle stroke="null" id="svg_7" fill="#788787" r="18.4" cy="18.4" cx="249.6"/>
+  <path style="vector-effect: non-scaling-stroke;" stroke="null" id="svg_8" fill="#0C91C4" d="m454.4,371.2c0,-7.2 0.8,-14.4 0.8,-22.4c0,-166.4 -84.8,-302.4 -189.6,-305.6l0,328l188.8,0z"/>
+  <path style="vector-effect: non-scaling-stroke;" stroke="null" id="svg_9" fill="#22B3E0" d="m454.4,371.2c0,-7.2 0.8,-14.4 0.8,-22.4c0,-166.4 -84.8,-302.4 -189.6,-305.6"/>
+  <polygon stroke="null" id="svg_10" fill="#FFAE0B" points="232.8,43.2 144.8,87.2 232.8,130.4 "/>
+  <polygon stroke="null" id="svg_11" fill="#FF860D" points="232.8,80.8 144.8,87.2 232.8,130.4 "/>
+  <polygon stroke="null" id="svg_12" fill="#E00E0E" points="231.2,144.8 231.2,363.2 89.6,363.2 "/>
+  <polygon style="vector-effect: non-scaling-stroke;" stroke="null" id="svg_13" fill="#BF1111" points="230.1999969482422,197.39999389648438 230.1999969482422,362.20001220703125 88.5999984741211,362.20001220703125 "/>
+  <g stroke="null" id="svg_14"/>
+  <g stroke="null" id="svg_15"/>
+  <g stroke="null" id="svg_16"/>
+  <g stroke="null" id="svg_17"/>
+  <g stroke="null" id="svg_18"/>
+  <g stroke="null" id="svg_19"/>
+  <g stroke="null" id="svg_20"/>
+  <g stroke="null" id="svg_21"/>
+  <g stroke="null" id="svg_22"/>
+  <g stroke="null" id="svg_23"/>
+  <g stroke="null" id="svg_24"/>
+  <g stroke="null" id="svg_25"/>
+  <g stroke="null" id="svg_26"/>
+  <g stroke="null" id="svg_27"/>
+  <g stroke="null" id="svg_28"/>
+ </g>
+</svg>

@@ -1,0 +1,27 @@
+---
+permalink: /blog/
+---
+
+<!--Layout used for blog posts -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body id="post">
+    <div  class="post-padding">
+        <nav class="crumbs">
+            <ol>
+                <li class="crumb"><a href="../">Home</a></li>
+                <li class="crumb"><a href="../blog">Blog</a></li>
+                <li class="crumb">{{page.title}}</li>
+            </ol>
+        </nav>
+        <img src="../assets/img/{{page.image}}" class="post-header-img" alt="...">
+        <div class="post-title">{{ page.title }}</div>
+       {{ content }}
+      </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!--Layout used for main page (with moving boat/water) -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jonathan Southern</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
+      integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Landing Page -->
+    <div class="landing-page">
+      <div id="particles-js"></div>
+      <h1 class="landing-title split">
+        My Blog
+        <br />
+        <p style="font-size:1.5rem;text-align:center;margin-top: 20px;">
+          Read about my experiences!
+        </p>
+      </h1>
+      <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark">
+      <div class="mx-auto" style="display: inherit">
+        <a class="nav-item nav-link" href="../">About</a> &nbsp
+        <a class="nav-item nav-link" href="../blog">Blog</a> &nbsp
+        <a class="nav-item nav-link" href="../contact">Contact</a>
+      </div>
+    </nav>
+
+    <div style="height:100%; background-color: #184559">
+      <div id="blog-posts" class="row justify-content-center">
+        {% for post in site.posts %}
+        <div
+          class="card col-lg-3 col-md-4 col-sm-12"
+          data-clickable="true"
+          data-href="{{ post.url }}"
+        >
+          <img
+            src="../assets/img/{{ post.image }}"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <small class="text-muted"
+              >{{ post.tag }} • {{ post.date-custom }}</small
+            >
+            <p class="card-text">{{ post.description | truncatewords: 30 }}</p>
+            <p class="text-right text-muted">Read More ➜</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
+    integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../assets/js/index.js"></script>
+</html>

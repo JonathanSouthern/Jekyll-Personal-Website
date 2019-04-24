@@ -1,0 +1,14 @@
+# Site settings
+title: Jonathan Southern
+email: your-email@example.com
+baseurl: "/"  
+
+# Build settings
+markdown: kramdown
+include: ['_pages']
+
+# Permalinks
+permalink: /blog/:title
+
+# Other
+port: 7000 
