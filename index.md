@@ -1,7 +1,10 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: default
+title: Jonathan Southern
+heading: Jonathan Southern
+subheading: Welcome to my personal portfolio!
+floating-item: assets/img/sailboat.svg
+floating-item-alt: sailboat
 ---
 
 
@@ -12,7 +15,7 @@ layout: home
     </h1>
     <div class="row">
         <div class="col-lg-4 col-sm-12 my-auto  ">
-            <img src="assets/img/myAvatar.svg" class="avatar-photo" >
+            <img src="assets/img/myAvatar.svg" class="avatar-photo" alt="Picture of me">
         </div>
         <div class="col-lg-8 col-sm-12">
             <div class="custom-card" >

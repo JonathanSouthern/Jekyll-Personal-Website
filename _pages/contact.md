@@ -1,9 +1,12 @@
 ---
-layout: contact
+layout: default
 title: Contact
 permalink: /contact/
 heading: Contact
 subheading: Like what you see? Send me a message
+floating-item: ../assets/img/message-in-a-bottle.svg
+floating-item-text: floating bottle
+floating-item-height: 150px
 ---
 
 <h2 class="section-title">Send me an email!</h2>
@@ -13,7 +16,7 @@ subheading: Like what you see? Send me a message
     <input type="text"  id="email" class="col-md-6 col-lg-6 col-sm-12" placeholder="Email Adress"><br>
     <textarea class="col-12" rows="6" placeholder="Message"></textarea><br>
     <div data-netlify-recaptcha="true"></div>
-    <button type="button" class="btn btn-outline-light btn-block" id="submit-btn">Send Message</button>
+    <button type="submit" class="btn btn-outline-light btn-block" id="submit-btn">Send Message</button>
 </form>
 <h2 class="section-title">Too cool for email?</h2>
 <div  id="icons">

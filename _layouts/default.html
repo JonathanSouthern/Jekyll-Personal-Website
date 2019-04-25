@@ -1,13 +1,20 @@
-<!--Layout used for main page (with moving boat/water) -->
+<!--
+layout: default
+title: Jonathan Southern
+heading: Jonathan Southern
+subheading: Welcome to my personal portfolio!
+floating-item: assets/img/sailboat.svg
+floating-item-alt: sailboat
+ -->
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Jonathan Southern</title>
+    <title>{{page.title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
     
@@ -15,15 +22,15 @@
     <div class="landing-page">
     <div id="particles-js"></div>
         <h1 class="landing-title split">
-            Jonathan Southern
+            {{page.heading}}
             <br>
             <p style="font-size:1.5rem;text-align:center;margin-top: 20px;">
-              Welcome to my personal porfolio! 
+             {{page.subheading}}
             </p>
         </h1> 
         <div class="ocean">
             <div class="wave"></div>
-            <img src="assets/img/sailboat.svg" alt="sailboat" class="sailboat">
+            <img src="{{page.floating-item}}" alt="{{page.floating-item-alt}}" style="height:{{page.floating-item-height}}" class="floating-item">
             <div class="wave"></div>
           </div>   
     </div>
@@ -31,7 +38,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-dark">
         <div class="mx-auto" style="display: inherit">
-            <a class="nav-item nav-link" href="#">About</a> &nbsp
+            <a class="nav-item nav-link" href="..">About</a> &nbsp
             <a class="nav-item nav-link" href="../blog">Blog</a> &nbsp
             <a class="nav-item nav-link" href="../contact">Contact</a>
         </div>
@@ -39,7 +46,6 @@
 
     <div style="background-color:#184559; padding-bottom:3rem;">
         {{content}}
-        <!-- <img src="assets/img/fish.png" style="width: 100vw;height:100%"> -->
     </div>
 </body>
 

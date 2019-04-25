@@ -1,6 +1,6 @@
 
 .ocean { 
-    height:5%;
+    height:6%;
     width:100%;
     position:absolute;
     bottom:0;
@@ -9,7 +9,7 @@
   }
   
   .wave {
-    background: url(../img/wave.png);
+    background: url(../img/wave.svg);
     position: absolute;
     top: -198px;
     width: 6400px;
@@ -42,26 +42,16 @@
     }
   }
 
-  .sailboat
+  .floating-item
   {
     position: absolute;
     bottom: 80px;
     left: 2%;
-    height: 250px;
+    height: 50%;
     width:auto;
     animation:float 7s ease-out infinite;
+    height:250px
   }
-
-  .bottle
-  {
-    position: absolute;
-    bottom: 60px;
-    left: 2%;
-    height: 150px;
-    width:auto;
-    animation:float 7s ease-out infinite;
-  }
-
 
   @keyframes float
   {
