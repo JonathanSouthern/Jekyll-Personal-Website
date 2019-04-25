@@ -1,5 +1,17 @@
-# Site settings
-title: Jonathan Southern
+# Site settings (Mainly used for SEO Plugin)
+title: Jonathan Southern's Portfolio and Blog
+description: Jonathan Southern's personal experiences and skills written down.
+url: www.jonathan-southern.com
+author: Jonathan Southern
+twitter:
+  username: JonathanSouth17
+  card: summary
+social:
+  name: Jonathan Southern
+  links:
+    - https://www.linkedin.com/in/jonathan-southern-772b4b135/
+logo: ../assets/img/myAvatar.svg
+lang: en_us
 email: your-email@example.com
 baseurl: "/"  
 
@@ -12,3 +24,7 @@ permalink: /blog/:title
 
 # Other
 port: 7000 
+
+#Plugins
+plugins:
+  - jekyll-seo-tag
