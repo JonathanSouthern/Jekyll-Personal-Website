@@ -12,9 +12,9 @@ floating-item-height: 150px
 <h2 class="section-title">Send me an email!</h2>
 <!-- <p class="text-center text-white py-0 my-0">(Replies within a day)</p> -->
 <form id="contact-form" class="row justify-content-between"  name="contact" data-netlify="true" data-netlify-recaptcha="true"> 
-    <input type="text" class="col-md-5 col-lg-5 col-sm-12" placeholder="Name"> 
-    <input type="text"  id="email" class="col-md-6 col-lg-6 col-sm-12" placeholder="Email Adress"><br>
-    <textarea class="col-12" rows="6" placeholder="Message"></textarea><br>
+    <input type="text" name="name" class="col-md-5 col-lg-5 col-sm-12" placeholder="Name"> 
+    <input type="text" name="email" id="email" class="col-md-6 col-lg-6 col-sm-12" placeholder="Email Adress"><br>
+    <textarea class="col-12" rows="6" placeholder="Message" name="message"></textarea><br>
     <div data-netlify-recaptcha="true"></div>
     <button type="submit" class="btn btn-outline-light btn-block" id="submit-btn">Send Message</button>
 </form>
