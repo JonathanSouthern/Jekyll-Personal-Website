@@ -5,18 +5,29 @@ $light-bg: white;
 $black-border: 3px solid black;
 $dark-radial: radial-gradient(ellipse at center, #1a1919 50%,#111111 99%);
 
-//Testing Classes
-.debug
-{background:rgba(235, 26, 89, 0.3); /* red with opacity*/}
-.debug2
-{background:rgba(197, 195, 50, 0.726); /* red with opacity*/}
+
+h5{
+    display: inline
+}
+
+.ui.grid {
+    height: 100%;
+}
 
 //General Classes
 body
 {
-    overflow-x: hidden;
+    position: relative;
     background:#184559;
-    color: $primary-font-color;
+}
+
+.inline-link{
+    color: rgb(182, 182, 182);
+    text-decoration: none;
+}   
+.inline-link:hover{
+    color: rgb(117, 117, 117);
+    text-decoration: underline;
 }
 
 
@@ -29,6 +40,7 @@ body
     width: 100%;
     height: 95vh;
     overflow: hidden;
+    color: $primary-font-color;
 }
 .landing-title
 {
@@ -42,6 +54,7 @@ body
     -moz-background-clip: text;
     background-clip: text;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+    color: $primary-font-color;
 }
 .section-title
 {
@@ -60,54 +73,35 @@ body
 }
 .subheading
 {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     margin-bottom: 1rem;
     text-align: center;
+    text-decoration: underline
 }
 .avatar-photo
 {
-    margin-left: auto;
-    margin-top:auto;
-    margin-bottom: auto;
-    display: flex;
-    height: 35vh;
-    border-radius: 50%;
-    border: $black-border; 
-    @media only screen and (max-width: 600px) {
-      margin: auto;
-      }
+    margin:auto;
+}
+.segment{
+    height: 100%;
+    h3{
+        margin: 0
+    }
 }
 
-.custom-card
-{
-    background: $dark-radial;
-    padding: 2rem;
-    margin: 2rem;
-    border-radius: 15px 50px;
-    border: $black-border;
-    box-shadow: 2px 2px 3px #0F2A36;
-    font-weight:500;
-    li{
-        font-size: 1rem;
-        font-weight: 400;
-    }
-    .footnote{
-        font-size: .80rem;
-        color: darken($color: $primary-font-color, $amount: 50)
-    }
-}
 
 // Navigation 
-.navbar
-{
-    height: 4rem;;
-    margin-top: -4rem;
-    text-align: center;
+.nav-menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .nav-item
 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin:0 1rem;;
     color: white;
     background: darkgray;
     -webkit-background-clip: text;
@@ -118,36 +112,10 @@ body
 
 .nav-item:hover{
     color: white;
-    border-bottom: 4px white solid;
+    border-bottom: 1px white solid;
 }
 
 //Blog Navigation
-#blog-posts
-{
-    .card{
-        height:25.5rem; 
-        margin:auto;
-        margin:3rem;
-        margin-top:2rem; 
-        padding:0;
-        border: $black-border;
-        background: $dark-radial;
-        :hover{
-            cursor: pointer;
-        }
-    }
-    .card-img-top{
-        max-height: 13rem;
-        max-width: 30rem;
-        width: auto;
-    }
-    .card-title{
-        margin-bottom:0;
-    }
-    .card-text{
-        height:4rem;
-    }
-}
 
 //Contact form + Social Media Icons
 #contact-form
@@ -188,6 +156,9 @@ body
         color:rgb(19, 19, 19);
     }
     .fa-linkedin{
+        color:rgb(19, 19, 19);
+    }
+    .fa-github-square{
         color:rgb(19, 19, 19);
     }
     .fa-stack-2x
@@ -300,9 +271,8 @@ body
      width:100%;
      max-width:800px;
      margin:auto;
-     padding-left:2rem;
-     padding-right:2rem;
-     padding-bottom:2rem;
+     padding: 2rem;
+     padding-top:4rem;
      @media only screen and (max-width: 600px) {
         padding: 1 rem;
      }
@@ -322,7 +292,8 @@ body
      text-align: center;
      font-size:4rem;
      font-weight: 600;
-     margin-bottom: 2rem;
+     margin-bottom: 4rem;
+     margin-top: 4rem;
      text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
      @media only screen and (max-width: 600px) {
         font-size: 2rem;
@@ -390,3 +361,31 @@ body
     }
     
  }
+
+ .page-wrapper{
+     padding: 2em;
+ }
+
+
+ .container{
+     margin-left: 1rem;
+     margin-right: 1rem;
+ }
+
+ .avatar-photo{
+    height: 30vh
+ }
+
+ .bordered{
+     border: 2px solid black !important;  
+ }
+
+ .cover{
+     min-width: 100%;
+     height: 30rem;
+     object-fit: cover;
+ }
+
+.center-text{
+    text-align: center;
+}

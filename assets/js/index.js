@@ -110,3 +110,11 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+
+
+$('.avatar-photo').click(function(){
+  $('.avatar-photo').transition('jiggle')});
+
+   $('.image').dimmer({
+    on: 'hover'
+  });
