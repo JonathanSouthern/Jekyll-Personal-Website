@@ -10,7 +10,7 @@ subheading: See the work I've done!
   {% for post in site.posts %}
     <div class="item">
       <div class="image">
-        <img src="../assets/img/{{ post.image }}">
+        <img src="{{ post.thumbnail }}">
       </div>
       <div class="content">
         <a class="header">{{post.title}}</a>
