@@ -25,6 +25,7 @@
     
     .post-title{
         text-align: center;
+        line-height: 4rem;
         font-size:4rem;
         font-weight: 600;
         margin-bottom: 4rem;
@@ -50,5 +51,21 @@
         font-family: inherit
     }
 
+    blockquote{
+        padding:1.2em 30px 1.2em 75px;
+        border-left:8px solid #3c7892 ;
+        line-height:1.6;
+        position: relative;
+    }
+    
+    blockquote::before{
+        font-family:Arial;
+        content: "\201C";
+        color:#3c7892;
+        font-size:4em;
+        position: absolute;
+        left: 10px;
+        top:-10px;
+    }
 }
 
