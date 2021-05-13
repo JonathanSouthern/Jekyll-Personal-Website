@@ -1,29 +1,29 @@
 ---
 layout: post
-title:  "Hello World"
-description: "My first ever blog post! Reason for blog and a little about me"
+date: 2021-05-13T08:06:24.393Z
+date-custom: April 15, 2019
+title: Introduction to Me
+tags: Personal
 tag: Personal
 image: coffee-blue.jpg
-date-custom: April 15, 2019
+description: My first ever blog post! Reason for blog and a little about me
 ---
+## **Hello!**
 
-## __Purpose of the blog__
-This is going to be used to document my experiences along the way, and any projects along the way! While I know it will benefit me personally, I hope this can also assist others.
+My name is Jonathan Southern, and thanks for even checking out my blog in the first place. I don't want to ramble too much about programming as the whole other 98% of this site will talk about it, so I will indulge you in a bit of my personal life.
 
+#### Huge Car Fanatic
 
-## __Background Information (FAQ)__ 
+While I'm not reviewing pull requests or smashing away at  keyboards, I enjoy working on cars. While I do enjoy doing some mentally taxing work, I also enjoy balancing out my tears working physically. Growing up my father would take me cruising around in his Miata and would introduce to a bunch of great car television, such as Top Gear (*UK version only of course).* I then took his love for cars and bought a Miata as my first car, just as he did. 
 
-__What's your name?__
-> Jonathan Southern (You wouldn't be here if you didn't know)
+![](/assets/uploads/img_20210425_102234.jpg "1999 Miata (with NB2 Facelift)")
 
-__How long have you been coding?__
-> As of today (April 2019), I have been coding for 6 years. For the first three years, it does recreationally and just as a hobby building dummy websites. However, I started to get more passionate once I had taken a AP course in highschool.
+In a lot of ways, working on a car is very similar to programming. Debugging an issue with a car is met with a series of questions like coding. For example, I first try to see if the issue is reproduceable. Then I follow a "stack trace", but in car version. Then I proceed to go on ~~stack overflow~~ the Miata forum to read a whole list of possible solutions/issues.
 
-__What drives me to code?__
-> Whenever I get asked this question, I always think back to the first time I started to code. I was stuck for literal hours, pulling my hair out trying to figure out how to debug my problem. When I finally came to the solution, it was the _best_ feeling ever! Nothing has satisfied me more than solving a problem.
+If you're even more curious about the car, you can look at the personal blog I have built for it on [Instagram](https://www.instagram.com/brilliantblackmiata/?hl=en).
 
-__Where did I grow up?__
-> Grew up in the valley of California, US then later moved to the San Francisco Bay Area.
+#### Random Fun Facts
 
-__Favorite type of food?__
-> Chicken Alfredo Fettuchi Pasta
+* I am a first born child of a Filipino immigrant 
+* I had once interviewed the previous mayor of Stockton, CA
+* As a kid, I had split open my head 3 separate times.
