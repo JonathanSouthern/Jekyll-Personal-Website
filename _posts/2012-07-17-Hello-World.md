@@ -8,11 +8,11 @@ tag: Personal
 image: coffee-blue.jpg
 description: My first ever blog post! Reason for blog and a little about me
 ---
-## **Hello!**
+# **Hello!**
 
 My name is Jonathan Southern, and thanks for even checking out my blog in the first place. I don't want to ramble too much about programming as the whole other 98% of this site will talk about it, so I will indulge you in a bit of my personal life.
 
-#### Huge Car Fanatic
+# Huge Car Fanatic
 
 While I'm not reviewing pull requests or smashing away at  keyboards, I enjoy working on cars. While I do enjoy doing some mentally taxing work, I also enjoy balancing out my tears working physically. Growing up my father would take me cruising around in his Miata and would introduce to a bunch of great car television, such as Top Gear (*UK version only of course).* I then took his love for cars and bought a Miata as my first car, just as he did. 
 
@@ -22,7 +22,7 @@ In a lot of ways, working on a car is very similar to programming. Debugging an 
 
 If you're even more curious about the car, you can look at the personal blog I have built for it on [Instagram](https://www.instagram.com/brilliantblackmiata/?hl=en).
 
-#### Random Fun Facts
+# Random Fun Facts
 
 * I am a first born child of a Filipino immigrant 
 * I had once interviewed the previous mayor of Stockton, CA
