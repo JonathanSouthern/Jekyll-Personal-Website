@@ -1,29 +1,58 @@
 ---
 layout: post
-title:  "Hello World Copy"
-description: "My first ever blog post! Reason for blog and a little about me"
+thumbnail: /assets/uploads/drag-drop-350.png
+date: 2021-05-13T09:05:24.506Z
+date-custom: April 15, 2019
+title: Pain of Unit Testing with Drag and Drop (With Jest)
+tags: Testing
 tag: Personal
 image: coffee-blue.jpg
-date-custom: April 15, 2019
+description: My first ever blog post! Reason for blog and a little about me
 ---
+Creating unit tests should be a surefire way of knowing if your component is functioning as it's supposed to. For the most part creating these unit tests can be pretty simple. Clicking on a checkbox and seeing if it's checked is a pretty straight forward. Though how do you something as complex as drag and drop when there's no browser? I ran into this very question and want to explain my process behind it.
 
-## __Purpose of the blog__
-This is going to be used to document my experiences along the way, and any projects along the way! While I know it will benefit me personally, I hope this can also assist others.
+#### **The Issue**
 
+There are couple of things we should try and understand before we dive in. First, how does our testing framework operate? Second, how does the library we use operate?
 
-## __Background Information (FAQ)__ 
+The testing framework I am currently utilizing is [testing-library](https://testing-library.com/docs/dom-testing-library/intro). This library is built to test DOM Nodes, through simulation of [JSDOM ](https://github.com/jsdom/jsdom)by [Jest](https://jestjs.io/). What does this mean for us? We have a headless browser that does not support layout.
 
-__What's your name?__
-> Jonathan Southern (You wouldn't be here if you didn't know)
+As far as the library goes, I was personally using[ dnd kit](https://github.com/clauderic/dnd-kit). Dnd kit when dragging with mouse compares the position of each draggable item with each other. 
 
-__How long have you been coding?__
-> As of today (April 2019), I have been coding for 6 years. For the first three years, it does recreationally and just as a hobby building dummy websites. However, I started to get more passionate once I had taken a AP course in highschool.
+With those two things laid out, it's clear that testing-library and dnd-kit are going to have a hard time working together. With a headless browser, there's no way to compare positional relationships between each DOM Node. However not all hope is lost.
 
-__What drives me to code?__
-> Whenever I get asked this question, I always think back to the first time I started to code. I was stuck for literal hours, pulling my hair out trying to figure out how to debug my problem. When I finally came to the solution, it was the _best_ feeling ever! Nothing has satisfied me more than solving a problem.
+#### Solution #1(Accessibility)
 
-__Where did I grow up?__
-> Grew up in the valley of California, US then later moved to the San Francisco Bay Area.
+We can take the approach that perhaps we can avoid using the mouse. We could always go the route of using a keyboard. This goes hand in hand with the accessibility rules that exist to assist people with disabilities.
 
-__Favorite type of food?__
-> Chicken Alfredo Fettuchi Pasta
+According to the third ARIA rule: 
+
+> All interactive ARIA controls must be usable with the keyboard.
+>
+> If you create a widget that a user can click or tap or drag or drop or slide or scroll, a user must also be able to navigate to the widget and perform an equivalent action using the keyboard.
+
+Luckily for us dnd kit happens to support multiple input types, such as keyboard.  
+
+Here's a quick, dummy example of what that might look like:
+
+```
+it('should drag item in list downwards', async () => {
+    const { container, getByText, findByPlaceholderText } = render(<FakeListOfDraggableItems />)
+    const reorderButton = within(getByText('Columns')).getByLabelText('Reorder Button')
+    //Wrapping with React's act helper function is neccessary: https://github.com/testing-library/react-testing-library/issues/276
+    act(() => reorderButton.focus())
+    expect(document.activeElement === reorderButton).toBeTruthy()
+    fireEvent.keyDown(reorderButton, { key: 'Enter', code: 'Enter' })
+    fireEvent.keyDown(reorderButton, { key: 'ArrowDown', code: 'ArrowDown' })
+    fireEvent.keyDown(reorderButton, { key: 'Enter', code: 'Enter' })
+    epect(logicToCheckItemOrder())
+  })
+```
+
+#### Solution #2 (Another framework)
+
+If you are unable to create a successful test or perhaps lack confidence that your test is performing as it should be perhaps it is best to find another framework. Using [Cypress](https://www.cypress.io/), seems to be the best way to go as of right now with it's browser rendering runs into no issues with running the tests mentioned. 
+
+#### **Conclusion**
+
+While I know this is a very specific use case, I hope at least one person can get use out of this.
