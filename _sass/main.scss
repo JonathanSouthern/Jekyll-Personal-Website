@@ -1,4 +1,3 @@
-
 // Sass Variables
 $primary-font-color: white;
 $light-bg: white;
@@ -34,7 +33,6 @@ body
 //Main Page Classes
 .landing-page
 {
-    /* background-color: darksalmon; */
     background-image:  linear-gradient(to bottom, #314755, #26a0da);
     display: flex;
     width: 100%;
@@ -88,34 +86,6 @@ body
         margin: 0
     }
 }
-
-
-// Navigation 
-.nav-menu{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5rem;
-}
-
-.nav-item
-{
-    font-size: 2rem;
-    margin:0 1rem;;
-    color: white;
-    background: darkgray;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
-}
-
-.nav-item:hover{
-    color: white;
-    border-bottom: 1px white solid;
-}
-
-//Blog Navigation
 
 //Contact form + Social Media Icons
 #contact-form
@@ -175,216 +145,36 @@ body
       }
 }
 
-// Vertical timeline
-.timeline-container {
-    width: 100%;
-    padding: 20px 0;
-    margin: 10px 0;
-    position: relative;
-    overflow: hidden;
-    :before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 10%;
-        margin-left: -1px;
-        width: 6px;
-        height: 100%;
-        background: $primary-font-color;
-        z-index: 1;
-        :first-child{
-            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 100%);
-        }
-     }
-     
- }
-
-.timeline-block {
-    width: -webkit-calc(90% + 8px);
-    width: -moz-calc(90% + 8px);
-    width: calc(90% + 8px);
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-box-pack: justify;
-    justify-content: space-between;
-    clear: both;
-    float: right;
- }
- 
- .marker {
-    width: 0; 
-    height: 0; 
-    margin-top:5px;
-    margin-left: 10px;
-    border-top: 15px solid transparent; 
-    border-left: 12px solid $primary-font-color; 
-    border-bottom: 15px solid transparent;
- }
- 
- .timeline-content {
-    width: 95%;
-    padding: 0 15px;
-    h3{
-    margin-top: 5px;
-    margin-bottom: 0px;
-    font-size: 20px;
-    font-weight: 500
-     }
-     p{
-         margin-bottom: .5rem;
-        font-size: 15px;
-        color: #74adc5;
-        font-weight: 500;
-     }
-     span {
-        font-size: 15px;
-        color: #74adc5da;
-        font-weight: 400;
-     }
-     ul{
-        list-style-type: square;
-         padding-left:2rem;
-     }
-     li {
-        font-weight: 400;
-        font-size: 14px;
-     }   
-     @media only screen and (max-width: 600px) {
-        h3{
-            font-size:15px
-        }
-        p{
-            font-size: 12px;
-         }
-         span {
-            font-size: 12px;
-             }
-      }
- }
-
- //Classes for each blog post
- .post-padding{
-     width:100%;
-     max-width:800px;
-     margin:auto;
-     padding: 2rem;
-     padding-top:4rem;
-     @media only screen and (max-width: 600px) {
-        padding: 1 rem;
-     }
- }
-
- .post-header-img{
-     display: block;
-     max-width:100%;
-     max-height:55vh;
-     width:auto;
-     margin:auto;
-     border: $black-border;
-     margin-bottom: 1rem;
- }
-
- .post-title{
-     text-align: center;
-     font-size:4rem;
-     font-weight: 600;
-     margin-bottom: 4rem;
-     margin-top: 4rem;
-     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
-     @media only screen and (max-width: 600px) {
-        font-size: 2rem;
-    }
- }
-
- #post{
-     h2{
-        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
-        border-bottom: 1px solid white;
-        @media only screen and (max-width: 600px) {
-            font-size: 1.5rem;
-        }
-     }
-    blockquote{
-        border-left: 2px solid rgb(255, 255, 255);
-        background: #00000000;
-        margin-left: 2.5rem;
-        padding-left: 1rem;
-        padding-right: .5rem;
-        @media only screen and (max-width: 600px) {
-            margin-left: .5rem;
-            padding-left: .5rem;
-        }
-    }
-    small{
-        margin-top:2rem;
-        font-size:.75rem;
-    }
-    p{
-        margin-left:1rem;
-        @media only screen and (max-width: 600px) {
-            margin-left: 0rem;
-        }
-    }
-    nav {
-       text-align: center;
-       margin: auto;
-       padding-bottom:1rem; 
-       padding-top:1rem;
-    }
-    
-    .crumbs ol {
-        list-style-type: none;
-        padding-left: 0;
-    }
-    
-    .crumb {
-        display: inline-block;
-        color: rgb(224, 224, 224);
-    }
-
-    a{
-        text-decoration: underline;
-        color:white;
-    }
-    
-    .crumb a::after {
-        display: inline-block;
-        color: rgb(255, 255, 255);
-        content: '/';
-        font-size: 80%;
-        font-weight: bold;
-        padding: 0 3px;
-    }
-    
- }
-
- .page-wrapper{
-     padding: 2em;
- }
+.marker {
+width: 0; 
+height: 0; 
+margin-top:5px;
+margin-left: 10px;
+border-top: 15px solid transparent; 
+border-left: 12px solid $primary-font-color; 
+border-bottom: 15px solid transparent;
+}
 
 
- .container{
-     margin-left: 1rem;
-     margin-right: 1rem;
- }
+.page-wrapper{
+    padding: 2em;
+}
 
- .avatar-photo{
-    height: 30vh
- }
 
- .bordered{
-     border: 2px solid black !important;  
- }
+.container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 
- .cover{
-     min-width: 100%;
-     height: 30rem;
-     object-fit: cover;
- }
+.bordered{
+    border: 2px solid black !important;  
+}
+
+.cover{
+    min-width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
 
 .center-text{
     text-align: center;
