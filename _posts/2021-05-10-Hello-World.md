@@ -2,7 +2,7 @@
 layout: post
 thumbnail: /assets/uploads/img_1410.jpg
 date: 2021-05-13T08:06:24.393Z
-date-custom: April 15, 2019
+date-custom: May 10, 2021
 title: Introduction to Me
 tags: Personal
 tag: Personal
