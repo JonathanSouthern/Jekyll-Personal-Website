@@ -1,4 +1,5 @@
-//Classes for each blog post
+//Classes for blog or project post
+
 .post{
     font-family: 'Inconsolata', monospace;
     display: flex;
@@ -19,7 +20,7 @@
         max-height:55vh;
         width:auto;
         margin:auto;
-        border: $black-border;
+        border: 2px black solid;
         margin-bottom: 1rem;
     }
     

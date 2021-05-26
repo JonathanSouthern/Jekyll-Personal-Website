@@ -1,0 +1,23 @@
+// Overwritten bootstrap classes
+.card {
+  .card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+  }
+}
+
+.navbar {
+  z-index: 1;
+}
+
+.form-check-input {
+  &:checked {
+    background-color: black;
+    border-color: black;
+  }
+  &:focus {
+    border-color: black;
+    box-shadow: 0 0 0 0.25rem rgb(24, 24, 24);
+  }
+}

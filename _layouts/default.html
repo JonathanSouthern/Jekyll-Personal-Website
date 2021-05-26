@@ -2,66 +2,91 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{page.title}}</title>
-    <meta name="viewport" content="user-scalable=no" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.4/dist/semantic.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{page.title}}</title>
+  <meta name="viewport" content="user-scalable=no" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
 
-    <!-- Landing Page -->
-    <div class="landing-page">
-        <div id="particles-js"></div>
-        <h1 class="landing-title split">
-            {{page.heading}}
-            <br>
-            <p style="font-size:1.5rem;text-align:center;margin-top: 20px;">
-                {{page.subheading}}
-            </p>
-        </h1>
-        <div class="ocean">
-            <div class="wave"></div>
-            <img src="{{page.floating-item}}" alt="{{page.floating-item-alt}}"
-                style="height:{{page.floating-item-height}}" class="floating-item">
-            <div class="wave"></div>
+  <!-- Landing Page -->
+  <div class="landing-page">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../project">Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="../blog">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact">Contact</a>
+            </li>
+          </ul>
         </div>
-    </div>
+        <div class="d-flex">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+          </div>
+        </div>
+      </div>
+    </nav>
 
-    <!-- Navigation Bar -->
-    <div class="nav-menu">
-        <a class="nav-item" href="../project">Projects</a>
-        <a class="nav-item" href="../blog">Blog</a>
-        <a class="nav-item" href="../contact">Resume </a>
+    <div id="particles-js" style="height: 100vh;"></div>
+    <h1 class="landing-title">
+      {{page.heading}}
+      <br>
+      <p style="font-size:1.5rem;text-align:center;margin-top: 20px;">
+        {{page.subheading}}
+      </p>
+    </h1>
+    <div class="ocean dark">
+      <div class="wave"></div>
+      <img src="{{page.floating-item}}" alt="{{page.floating-item-alt}}" style="height:{{page.floating-item-height}}"
+        class="floating-item">
+      <div class="wave"></div>
     </div>
-
-    <div style="background-color:#184559; padding-bottom:3rem;">
-        {{content}}
-    </div>
+  </div>
+  <div class="container content dark">
+    {{content}}
+  </div>
 </body>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.4/dist/semantic.min.js"></script>
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <script src="http://cdn.jsdelivr.net/jquery.glide/1.0.6/jquery.glide.min.js"></script>
 <script src="../assets/js/index.js"></script>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script src="https://kit.fontawesome.com/d2a3e260c5.js" crossorigin="anonymous"></script>
 <script>
-    if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-            if (!user) {
-                window.netlifyIdentity.on("login", () => {
-                    document.location.href = "/admin/";
-                });
-            }
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
         });
-    }
+      }
+    });
+  }
 </script>
 
 </html>
