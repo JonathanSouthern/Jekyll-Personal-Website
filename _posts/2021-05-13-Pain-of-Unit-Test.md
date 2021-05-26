@@ -4,8 +4,7 @@ thumbnail: /assets/uploads/drag-drop-350.png
 date: 2021-05-13T09:05:24.506Z
 date-custom: May 13, 2021
 title: Pain of Unit Testing with Drag and Drop (With Jest)
-tags: techincal
-tag: Personal
+tags: technical
 image: coffee-blue.jpg
 description: My first ever blog post! Reason for blog and a little about me
 ---

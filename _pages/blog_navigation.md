@@ -14,7 +14,7 @@ subheading: Read what I have to say!
     <a class="nav-link" id="personal-tab" data-toggle="pill" href="#personal" role="tab" aria-controls="personal" aria-selected="false">Personal</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="techincal-tab" data-toggle="pill" href="#techincal" role="tab" aria-controls="techincal" aria-selected="false">Technical</a>
+    <a class="nav-link" id="technical-tab" data-toggle="pill" href="#technical" role="tab" aria-controls="technical" aria-selected="false">Technical</a>
   </li>
 </ul>
 <div class="tab-content" id="pills-tabContent">
@@ -47,7 +47,7 @@ subheading: Read what I have to say!
     </div>
   </div>
   <!-- TECHINCAL POSTS -->
-  <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+  <div class="tab-pane fade" id="technical" role="tabpanel" aria-labelledby="technical-tab">
     <div class="mx-auto px-3 py-5">
       <ul class="list mb-5 mx-auto">
         {% for post in site.posts %} 
