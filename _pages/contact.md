@@ -31,14 +31,22 @@ floating-item-height: 150px
   <button type="submit" class="btn btn-light">Send Message</button>
 </form>
 
-<div class="container-flex icons">
-  <a href="https://www.linkedin.com/in/jonathan-southern-772b4b135/" target="_blank"> 
-    <i class="fab fa-circle fa-stack-2x fa-linkedin-in"></i>
-  </a>
-  <a href="https://stackoverflow.com/users/11380925/jonathan-s" target="_blank"> 
-    <i class="fab fa-circle fa-stack-2x fa-stack-overflow"></i>
-  </a>
-  <a href="https://github.com/JonathanSouthern" target="_blank"> 
-    <i class="fab fa-circle fa-stack-2x fa-github"></i>
-  </a>
+<!--------------------- OTHER SOCIAL ----------------------->
+<h3 class="text-center mb-2">Find me elsewhere </h3>
+<div class="row mx-auto mb-5 icons">
+  <div class="col-sm text-center">
+    <a href="https://www.linkedin.com/in/jonathan-southern-772b4b135/" target="_blank"> 
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+  <div class="col-sm text-center">
+    <a href="https://stackoverflow.com/users/11380925/jonathan-s" target="_blank"> 
+      <i class="fab fa-stack-overflow"></i>
+    </a>
+  </div>
+  <div class="col-sm text-center">
+    <a href="https://github.com/JonathanSouthern" target="_blank"> 
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
 </div>

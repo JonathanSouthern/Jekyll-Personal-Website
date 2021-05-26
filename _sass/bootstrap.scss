@@ -1,4 +1,6 @@
 // Overwritten bootstrap classes
+@import "colors";
+
 .card {
   .card-img-top {
     width: 100%;
@@ -19,5 +21,27 @@
   &:focus {
     border-color: black;
     box-shadow: 0 0 0 0.25rem rgb(24, 24, 24);
+  }
+}
+
+.nav.nav-pills {
+  &.dark {
+    .nav-item {
+      color: $dark-font-color;
+      .active {
+        background-color: $dark-background;
+        -webkit-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.61);
+        box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.61);
+        &:hover {
+          background-color: $dark-font-color-hover;
+        }
+      }
+      .nav-link:not(.active) {
+        color: $dark-font-color;
+        &:hover {
+          color: $dark-font-color-hover;
+        }
+      }
+    }
   }
 }

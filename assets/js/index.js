@@ -1,10 +1,26 @@
-$(document).ready(() => {
-$(document.body).on('click', '.card[data-clickable=true]', (e) => {
-    var href = $(e.currentTarget).data('href');
-    window.location = href;
-});
-});
+//Netlify Admin Login
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
 
+//Bootstrap Nav (For blog nav)
+var triggerTabList = [].slice.call(document.querySelectorAll('#blog-navigation a'))
+console.log(triggerTabList)
+triggerTabList.forEach(function (triggerEl) {
+  var tabTrigger = new bootstrap.Tab(triggerEl)
+  triggerEl.addEventListener('click', function (event) {
+    event.preventDefault()
+    tabTrigger.show()
+  })
+})
+
+//Particle JS
 particlesJS("particles-js", {
   "particles": {
     "number": {
@@ -110,11 +126,3 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
-
-
-$('.avatar-photo').click(function(){
-  $('.avatar-photo').transition('jiggle')});
-
-   $('.image').dimmer({
-    on: 'hover'
-  });

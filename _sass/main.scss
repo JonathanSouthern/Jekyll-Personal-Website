@@ -4,6 +4,9 @@
 body {
   position: relative;
   background: #07171d;
+  &.dark {
+    color: $dark-font-color;
+  }
 }
 
 .inline-link {
@@ -105,6 +108,7 @@ body {
 }
 
 .icons {
+  max-width: 760px;
   font-size: 3rem;
   a {
     text-decoration: none;
