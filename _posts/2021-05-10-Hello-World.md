@@ -4,7 +4,7 @@ thumbnail: /assets/uploads/img_1410.jpg
 date: 2021-05-13T08:06:24.393Z
 date-custom: May 10, 2021
 title: Introduction to Me
-tags: Personal
+tags: personal
 tag: Personal
 image: coffee-blue.jpg
 description: My first ever blog post! Reason for blog and a little about me
