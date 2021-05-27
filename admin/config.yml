@@ -29,7 +29,10 @@ collections:
     fields:
       - {label: "Featured Image", name: 'thumbnail', widget: "image"}
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Description of Product', name: 'description', widget: 'markdown' }
+      - { label: 'What I learned', name: 'learned', widget: 'markdown' }
+      - { label: 'Other', name: 'body', widget: 'markdown' }
+      - { label: 'Technologies Used', name: 'technologiesUsed', widget: 'list', min: 1}
       - { label: 'Tags', name: 'tags', widget: 'select',
-          options: ['Personal', 'Professional']
+          options: ['personal', 'professional']
         }
