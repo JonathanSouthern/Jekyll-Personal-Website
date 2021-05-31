@@ -22,7 +22,7 @@ subheading: Read what I have to say!
   <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
     <div class="mx-auto px-3 py-5">
       <ul class="list mb-5 mx-auto">
-        {% for post in site.posts %}
+        {% for post in site.categories['blog'] %}
           <li >
             <a href="{{ post.url }}">{{post.title}}</a>
             <span>{{ post.date-custom }}</span>
@@ -35,7 +35,7 @@ subheading: Read what I have to say!
   <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="personal-tab">
     <div class="mx-auto px-3 py-5">
       <ul class="list mb-5 mx-auto">
-        {% for post in site.posts %} 
+        {% for post in site.categories['blog'] %} 
           {% if post.tags contains "personal" %}
             <li>
               <a href="{{ post.url }}">{{post.title}}</a>
@@ -50,7 +50,7 @@ subheading: Read what I have to say!
   <div class="tab-pane fade" id="technical" role="tabpanel" aria-labelledby="technical-tab">
     <div class="mx-auto px-3 py-5">
       <ul class="list mb-5 mx-auto">
-        {% for post in site.posts %} 
+        {% for post in site.categories['blog'] %} 
           {% if post.tags contains "technical" %}
             <li>
               <a href="{{ post.url }}">{{post.title}}</a>

@@ -8,7 +8,7 @@ collections:
   - name: 'blog'
     label: 'Blog'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    folder: '_posts/'
+    folder: 'blog/_posts'
     editor:
       preview: false
     fields:
@@ -22,7 +22,7 @@ collections:
         }
   - name: 'projects'
     label: 'Projects'
-    folder: '_projects/'
+    folder: 'project/_posts'
     create: true
     editor:
       preview: false

@@ -11,7 +11,6 @@ if (window.netlifyIdentity) {
 
 //Bootstrap Nav (For blog nav)
 var triggerTabList = [].slice.call(document.querySelectorAll('#blog-navigation a'))
-console.log(triggerTabList)
 triggerTabList.forEach(function (triggerEl) {
   var tabTrigger = new bootstrap.Tab(triggerEl)
   triggerEl.addEventListener('click', function (event) {
