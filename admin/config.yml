@@ -33,7 +33,11 @@ collections:
       - { label: 'Description of Product', name: 'description', widget: 'markdown' }
       - { label: 'What I learned', name: 'learned', widget: 'markdown' }
       - { label: 'Other', name: 'body', widget: 'markdown' }
-      - { label: 'Technologies Used', name: 'technologiesUsed', widget: 'list', min: 1}
+      - { label: 'Technologies Used', name: 'technologiesUsed', widget: 'list', 
+          min: 1, 
+          allow_add:true, 
+          field: {label: 'tech', name:'tech', widget: 'string'}
+        }
       - { label: 'Tags', name: 'tags', widget: 'select',
           options: ['personal', 'professional']
         }
