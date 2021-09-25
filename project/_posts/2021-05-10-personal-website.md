@@ -1,32 +1,27 @@
 ---
 thumbnail: https://miro.medium.com/max/820/0*N8RG95bKJnnF-wpL.png
 title: Personal Website
-description: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dolor
-  justo. Nunc ultricies elementum mi, sed facilisis quam pretium eget.
-  Suspendisse auctor enim quam, vel vestibulum enim volutpat non. Etiam a mi a
-  quam suscipit mollis. Proin lobortis mauris lorem, ac pretium neque venenatis
-  vitae. Nulla consequat accumsan blandit. Maecenas ut suscipit purus. Morbi non
-  lorem id tortor tincidunt congue nec ut odio. Mauris elit ligula, faucibus et
-  facilisis nec, vulputate eget purus.
-
-
-  Etiam eu consectetur sapien. Phasellus vitae odio lobortis, ullamcorper turpis at, blandit lectus. Quisque dolor risus, vehicula ut tincidunt in, cursus at justo. Nullam imperdiet nunc id sapien imperdiet bibendum nec id urna. Cras eu massa a quam ullamcorper congue. Pellentesque dapibus gravida enim, non eleifend metus feugiat eget. Donec in dui vitae lacus egestas volutpat. Donec ac sapien leo. Sed vel orci sed purus aliquet mollis sit amet sed tellus. Aliquam egestas posuere felis, at porta ex sagittis ut. Ut dictum erat fringilla magna fringilla porttitor. Nunc lobortis posuere augue vitae volutpat.
+description: This website was created as mainly a portfolio and blog. Rather
+  than telling people what I’ve worked on, I send them to this website.
 learned: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dolor
-  justo. Nunc ultricies elementum mi, sed facilisis quam pretium eget.
-  Suspendisse auctor enim quam, vel vestibulum enim volutpat non. Etiam a mi a
-  quam suscipit mollis. Proin lobortis mauris lorem, ac pretium neque venenatis
-  vitae. Nulla consequat accumsan blandit. Maecenas ut suscipit purus. Morbi non
-  lorem id tortor tincidunt congue nec ut odio. Mauris elit ligula, faucibus et
-  facilisis nec, vulputate eget purus.
+  ###### The Power Of Jekyll + Netlify
 
 
-  Etiam eu consectetur sapien. Phasellus vitae odio lobortis, ullamcorper turpis at, blandit lectus. Quisque dolor risus, vehicula ut tincidunt in, cursus at justo. Nullam imperdiet nunc id sapien imperdiet bibendum nec id urna. Cras eu massa a quam ullamcorper congue. Pellentesque dapibus gravida enim, non eleifend metus feugiat eget. Donec in dui vitae lacus egestas volutpat. Donec ac sapien leo. Sed vel orci sed purus aliquet mollis sit amet sed tellus. Aliquam egestas posuere felis, at porta ex sagittis ut. Ut dictum erat fringilla magna fringilla porttitor. Nunc lobortis posuere augue vitae volutpat.
+  I originally chose Jekyll as my static site generator , solely because I was familiar with it. When I first discovered web development, it was one of the tools I saw on stackshare.io. Using Netflify to host my website was easy enough as it is, as all I have to really do is connect my repo and use my purchased domain name.
+
+
+  However, looking through Netlify’s documentation, I noticed that they supported. 
+
+
+  ###### Ruby
+
+
+  I had no prior knowledge of Ruby, however Jekyll being built on top of it. I got to learn the basics of it. I’m still expert in it, but I would say I understand the basics of it now
 technologiesUsed:
   - Jekyll
+  - Bootstrap
+  - SCSS
+  - Netlify
 tags: personal
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dolor justo. Nunc ultricies elementum mi, sed facilisis quam pretium eget. Suspendisse auctor enim quam, vel vestibulum enim volutpat non. Etiam a mi a quam suscipit mollis. Proin lobortis mauris lorem, ac pretium neque venenatis vitae. Nulla consequat accumsan blandit. Maecenas ut suscipit purus. Morbi non lorem id tortor tincidunt congue nec ut odio. Mauris elit ligula, faucibus et facilisis nec, vulputate eget purus.
-
-Etiam eu consectetur sapien. Phasellus vitae odio lobortis, ullamcorper turpis at, blandit lectus. Quisque dolor risus, vehicula ut tincidunt in, cursus at justo. Nullam imperdiet nunc id sapien imperdiet bibendum nec id urna. Cras eu massa a quam ullamcorper congue. Pellentesque dapibus gravida enim, non eleifend metus feugiat eget. Donec in dui vitae lacus egestas volutpat. Donec ac sapien leo. Sed vel orci sed purus aliquet mollis sit amet sed tellus. Aliquam egestas posuere felis, at porta ex sagittis ut. Ut dictum erat fringilla magna fringilla porttitor. Nunc lobortis posuere augue vitae volutpat.
+###### d
